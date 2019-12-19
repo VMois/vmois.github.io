@@ -6,6 +6,10 @@ subtitle: Some of my stuff that worth sharing
 
 ## 2019
 
+### BubaOS
+
+The simple OS is written from scratch in Assembly and C for x86 architecture. Project for "Basic of programming 1" course at Budapest University of Technology and Economics (BME). [GitHub](https://github.com/VMois/buba-os)
+
 ### Speech Emotion Analysis (in progress)
 
 As part of [BME AI](https://github.com/bme-ai) group, I am working on a neural network model to determine human emotions from speech.
