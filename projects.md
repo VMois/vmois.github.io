@@ -19,6 +19,11 @@ As part of [BME AI](https://github.com/bme-ai) group, I am working on a neural n
 
 ## 2018
 
+### Notes
+
+Collection of personal notes and resources about different topics
+like data engineering, quantum computing, machine learning and more. [GitHub](https://github.com/VMois/notes)
+
 ### Photy
 
 High-school project for an Android programming class. No docs, no tests, a lot of time spend. But it was fun. [GitHub](https://github.com/VMois/photy)
