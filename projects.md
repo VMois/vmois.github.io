@@ -4,6 +4,12 @@ title: Projects
 subtitle: Some of my stuff that worth sharing
 ---
 
+## 2020
+
+### Deku
+
+C++ library for microservices. Inspired by [cote](https://github.com/dashersw/cote). Powered by [ZeroMQ](https://zeromq.org/). Project for "Basics of programming 2" course at Budapest University of Technology and Economics (BME). [GitHub](https://github.com/VMois/deku).
+
 ## 2019
 
 ### BubaOS
