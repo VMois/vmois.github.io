@@ -15,7 +15,8 @@ author: Vladyslav Moisieienkov
 
 navbar-links:
   About Me: "aboutme"
-  Cool stuff: "coolstuff"
+  Projects: "projects"
+  #Cool stuff: "coolstuff"
 
 # --- Logo --- #
 
