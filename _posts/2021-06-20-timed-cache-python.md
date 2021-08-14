@@ -84,4 +84,4 @@ def timed_lru_cache(seconds: int, maxsize: int = 128):
 Now both `cache_clear` and `cache_info` methods are exposed for `load_key_from_s3` function. Thank you for reading.
 
 {: .box-note}
-If you found a problem or have a suggestion, please, open an issue on [GitHub](https://vmois.github.io). Thank you.
+If you found a problem or have a suggestion, please, open an issue on [the website's GitHub repo](https://github.com/VMois/vmois.github.io). Thank you.
