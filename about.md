@@ -12,8 +12,8 @@ Besides this, I write blog posts (when the moon is in the right phase :smile:) a
 I am mostly interested in backend and distributed systems 
 but, recently, I have started learning about iOS development and SwiftUI.
 
-If you are interested in what I am doing, 
-consider checking [my Polywork profile](https://www.polywork.com/vmois) for more details.
+If you want to know more about what I am doing, 
+consider checking [my Polywork profile](https://www.polywork.com/vmois).
 
 In addition, I study Electrical Engineering BSc at [Budapest University of Technology and Economics (BME)](https://www.vik.bme.hu/en/).
 
