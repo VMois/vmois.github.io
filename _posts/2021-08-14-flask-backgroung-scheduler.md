@@ -213,6 +213,3 @@ In the `run` method, *while loop* checks if `stop_event` is set and if yes, exit
 `SchedulerFactory` provides a convenient method to create a different kinds of schedulers.
 
 Thank you for reading.
-
-{: .box-note}
-If you found a problem or have a suggestion, please, open an issue on [the website's GitHub repo](https://github.com/VMois/vmois.github.io). Thank you.
