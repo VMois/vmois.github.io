@@ -3,6 +3,7 @@ layout: post
 title: Python Flask app with background scheduler
 tags: [python, threading, flask]
 comments: false
+readtime: true
 ---
 
 This short article covers a template for setting up a Flask based web app 

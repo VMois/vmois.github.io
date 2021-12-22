@@ -3,6 +3,7 @@ layout: post
 title: How to start using GitHub Actions in your Xcode project? 
 tags: [xcode, github, ios]
 comments: false
+readtime: true
 ---
 
 Around 1.5 months ago, I have started learning iOS development using SwiftUI. 

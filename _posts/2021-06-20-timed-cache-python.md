@@ -3,6 +3,7 @@ layout: post
 title: Make underlying cache methods available for timed LRU cache in Python 3
 tags: [python, cache]
 comments: false
+readtime: true
 ---
 
 We know that cache can greatly speed up a load of frequently used data 
