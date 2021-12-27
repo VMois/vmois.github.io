@@ -14,7 +14,7 @@ author: Vladyslav Moisieienkov
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About: "about"
+  About: "about/"
 
 # --- Logo --- #
 
