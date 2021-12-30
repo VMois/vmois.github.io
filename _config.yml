@@ -189,7 +189,7 @@ date_format: "%B %-d, %Y"
 timezone: "Europe/Budapest"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /:slug/
 paginate: 5
 
 kramdown:
@@ -203,7 +203,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
+      comments: false
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:

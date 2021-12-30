@@ -1,9 +1,10 @@
 ---
 layout: post
-title: How to start using GitHub Actions in your Xcode project? 
+title: How to use GitHub Actions for testing Xcode project? 
 tags: [xcode, github, ios]
 comments: false
 readtime: true
+slug: xcode-github-actions
 ---
 
 Around 1.5 months ago, I have started learning iOS development using SwiftUI. 
@@ -11,7 +12,7 @@ I am building a small app to keep track of my finances.
 As part of my learning, I decided to set up a workflow to run Xcode tests using GitHub Actions. 
 And today, I want to share my experience of doing it.
 
-# Let's start easy - running tests locally
+## Let's start easy - running tests locally
 
 One small step at a time they say. 
 Let’s start with running our tests on a local machine.
@@ -44,7 +45,7 @@ If things went well, you should get a similar output.
 
 Good job! Let's move to the next step.
 
-# Putting GitHub Actions into action - first workflow
+## Putting GitHub Actions into action - first workflow
 
 We know how to run tests locally, it is time to move to GitHub.
 I don't want to repeat GitHub documentation, so if you never used Actions,
@@ -85,7 +86,7 @@ In the end, we run the same command to run tests as in the previous step but wit
 We are using [xcpretty](https://github.com/xcpretty/xcpretty#usage) 
 to format xcodebuild results for better readability.
 
-# Running job with different iOS versions 
+## Running job with different iOS versions 
 
 You can use [Action's matrix](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-including-new-combinations) feature
 to run a job with multiple parameters.
@@ -122,7 +123,7 @@ I added a parameter called `name` to the job to make it appear better. Results:
 
 You can also use matrix feature to test different device configurations, etc.
 
-# Disabling UI tests
+## Disabling UI tests
 
 When developing my app, I didn't want to have UI tests
 at the beginning. I expect the interface to change a lot.
@@ -142,14 +143,10 @@ Go to Xcode, then *Product > Scheme > Edit Scheme*, uncheck "Enabled" field near
 
 ![Xcode scheme edit window with disabled UI tests](/assets/posts/xcode-disable-ui-tests.png)
 
-# Conclusion
+## Conclusion
 
 Congratulations! I hope you have your GitHub Action workflow up and running.
 This is a sufficient setup for the beginning, but you might want to go further with your CI.
 For example, adding a [linter check](https://github.com/realm/SwiftLint) for Swift, 
 or writing some UI tests. 
 Thank you for reading this article! See you.
-
-# References
-
-- [Creating Basic GitHub Actions For Testing Xcode](https://dev.to/ezra_black_/creating-basic-github-actions-for-testing-xcode-40ld)

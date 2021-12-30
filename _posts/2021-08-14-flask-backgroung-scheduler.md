@@ -1,23 +1,27 @@
 ---
 layout: post
-title: Python Flask app with background scheduler
+title: How to add a background thread to a Flask app?
 tags: [python, threading, flask]
 comments: false
 readtime: true
+slug: python-flask-background-thread
 ---
 
 This short article covers a template for setting up a Flask based web app 
-with a background scheduler. 
+with a background thread. 
 Knowledge of Python and basic knowledge of Flask is required. 
 
-# Problem description
+## Introduction
 
-Imagine the situation where we have a web app that accepts some tasks via HTTP. 
-Those tasks need to be collected over some time and processed later.
-We, also, want to keep our system as simple as possible.
-What are the possible solution with Python and Flask?
+Imagine the situation where we have a web app that accepts some requests via HTTP.
+These requests can generate longer-running tasks. 
+We do not want the user to wait until long-running tasks are finished to receive a response 
+and, also, want to keep our app as simple as possible. 
+So, setting up dedicated software like [Celery](https://docs.celeryproject.org/en/stable/) is not an option.
+One possible solution is to set up a separate *background Python thread* alongside the main thread on which the Flask app is running. 
+Let's call this background thread a **scheduler**.
 
-# The possible solution
+## Setting up a background scheduler
 
 The Flask-based web app will handle new tasks via HTTP POST requests.
 The scheduler will run in a **separate thread**. 
@@ -27,6 +31,11 @@ New tasks will be put to the queue by the Flask app,
 and the scheduler will get them from the queue and process.
 When a program terminates, the scheduler cleans up its resources before shutdown
 (so-called *graceful shutdown*).
+
+{: .box-warning}
+**Warning:** In case of an app restart, items in the queue will be lost. 
+This is *simple* implementation. 
+If you have critical data there, consider using dedicated software like Celery. 
 
 Our sample project contains two files:
 

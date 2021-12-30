@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Make underlying cache methods available for timed LRU cache in Python 3
-tags: [python, cache]
+title: How to make underlying cache methods available in timed LRU cache in Python?
+tags: [python, caching]
 comments: false
 readtime: true
+slug: python-timed-lru-cache-methods
 ---
 
 We know that cache can greatly speed up a load of frequently used data 
@@ -56,7 +57,10 @@ def load_key_from_s3(key: str):
 **Warning:** brackets are important. `@timed_lru_cache` will not work, use `@timed_lru_cache()`
 
 But there is an issue, the `wraps` method from `functools` is only preserving the original function's name and docstring
-but not original methods ([documentation on wraps](https://docs.python.org/3.9/library/functools.html#functools.wraps)). Calling, for example, `load_key_from_s3.cache_clear()` will fail. What if we want to expose missing methods for test and statistics purposes? The simplest fix to the above implementation is the following:
+but not original methods ([documentation on wraps](https://docs.python.org/3.9/library/functools.html#functools.wraps)). 
+Calling, for example, `load_key_from_s3.cache_clear()` will fail. 
+What if we want to expose missing methods for test and statistics purposes? 
+The simplest fix to the above implementation is the following:
 
 ```python
 def timed_lru_cache(seconds: int, maxsize: int = 128):
