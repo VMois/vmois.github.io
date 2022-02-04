@@ -46,6 +46,9 @@
   {% include google_analytics.html %}
   {% include cloudflare_analytics.html %}
 
+  <script defer data-domain="vmois.dev" src="https://plausible.io/js/plausible.js"></script>
+
+
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
       {% include ext-css.html css=css %}
