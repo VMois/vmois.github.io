@@ -5,7 +5,7 @@ tags: [python, threading, flask]
 comments: false
 readtime: true
 slug: python-flask-background-thread
-last-updated: February 7, 2022
+last_modified_at: February 7, 2022
 ---
 
 This short article covers a template for setting up a Flask based web app 
