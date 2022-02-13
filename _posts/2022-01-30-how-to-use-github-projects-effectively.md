@@ -5,18 +5,23 @@ tags: [github,project-management]
 comments: false
 readtime: true
 slug: how-to-use-github-projects-effectively
+last_modified_at: February 13, 2022
 ---
 
 [GitHub Projects](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects) 
-is a recently released GitHub project management tool that provides a flexible way to organize work.
+is a recently released free GitHub project management tool that provides a flexible way to organize work.
 Despite that it is still in beta, I think this is a big step forward.
 But, with great flexibility comes great uncertainty.
 That is why, in this article, I want to share some tips on how to use GitHub Projects effectively.
+
+In addition, for some tips, you will find examples of public GitHub Projects that follow the tip. 
+This can be an inspiration for how to organize your own project.
 
 ## 1. Use draft issues
 
 Draft issues belong to your GitHub Project 
 instead of a repository like regular issues.
+You can add title and description in a similar way as with regular issues.
 
 ![Example of a draft issue in GitHub Projects](/assets/posts/github-draft-issue-example.png)
 
@@ -24,16 +29,18 @@ In addition, you can assign fields values to created draft issues (except *"Labe
 
 ![Example of a draft issues in a view in GitHub Projects](/assets/posts/github-projects-draft-issues-view.png)
 
-No need to write tasks in an external place like Google Docs.
-You can keep them as draft issues in your GitHub Project.
+Draft issues can be useful for your project management activities.
+For example, during **the planning**. 
+Instead of writing future tasks in an external place like Google Docs.
+You can keep them close to the ongoing work as draft issues in your GitHub Project.
 And with custom fields that represent, for example, priority and size, 
 you can sort and filter tasks to understand what matters the most.
 The draft issue can be converted to a regular issue with a click of a button later.
 
 *Docs:* 
 
-- [How to add draft issues to your project?](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/quickstart#adding-draft-issues-to-your-project);
-- [How to convert draft issue to issue?](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/creating-a-project#converting-draft-issues-to-issues)
+- [How to add draft issues to your project?](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/quickstart#adding-draft-issues-to-your-project)
+- [How to convert draft issue to a regular issue?](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/creating-a-project#converting-draft-issues-to-issues)
 
 *Examples*. Projects that are using draft issues:
 
@@ -72,7 +79,9 @@ No need to leave the board to see what PRs are linked.
 The field is created automatically for each project. 
 You only need to include it in your view. 
 
-*Docs:* [How to include/hide fields in the view?](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/customizing-your-project-views#showing-and-hiding-fields)
+*Docs:* 
+
+- [How to include/hide fields in the view?](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/customizing-your-project-views#showing-and-hiding-fields)
 
 ![Screenshot to show how Linked Pull Requests field looks](/assets/posts/github-projects-linked-pr-field.png)
 
@@ -117,11 +126,17 @@ you can do a couple of things:
 - check regularly [GitHub Issues Changelog](https://github.blog/changelog/label/issues/) to get the latest updates on new features and improvements;
 
 - check once in a while [GitHub Public Roadmap](https://github.com/orgs/github/projects/4247/views/7) (go to *"GitHub Issues"* view) 
-to see what features to expect in the future.
+to see what features to expect in the future;
+
+- [provide feedback](https://github.com/github/feedback/discussions/categories/issues-feedback); this helps the GitHub Projects product team to understand what work to prioritize.
+
+For example, I am following [parity with the classic Projects](https://github.com/github/roadmap/issues/287) issue. This issue will make a transition from classic Projects to a new one smooth.
 
 ## Conclusion
 
-I hope you find the tips and examples useful.
-GitHub Projects is in active development, and things might change a lot.
-As time goes, I will update the article with new information.
-Thank you for reading!
+I think the Projects tool is a big step forward in the project management area for GitHub.
+The tool is still in beta, and under active development, so a lot of exciting features are ahead of us.
+As time goes, I will update the article with new information. Thank you for reading!
+
+{: .box-note}
+**Note:** You can find a code, and list of GitHub Projects collected for this article in [this repository](https://github.com/VMois/discover-github-projects-tool).
