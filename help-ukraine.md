@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Help Ukraine!
-subtitle: Russia has invaded Ukraine. Ukraine needs help to protect itself.
+subtitle: russia has invaded Ukraine. Ukraine needs help to protect itself.
 ---
 
 There are a couple of things you can do to support Ukraine:
