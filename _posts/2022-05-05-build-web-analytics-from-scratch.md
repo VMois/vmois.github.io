@@ -124,3 +124,5 @@ This is a simple metric, but it provides me with some confidence that my content
 I do not plan to develop new features anytime soon. Maybe, some smaller improvements and fixes.
 
 Thank you for reading the article!
+
+*And, thank you, [Krystyna Svirbyy](https://www.linkedin.com/in/krystyna-svirbyy/), for reviewing the article.*
