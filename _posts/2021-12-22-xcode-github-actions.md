@@ -41,7 +41,7 @@ You will need to modify the `OS` parameter in the `destination` field accordingl
 The command will launch both UI and unit tests. 
 If things went well, you should get a similar output.
 
-![Output of xcodebuild tool in terminal](/assets/posts/xcode-tests-local.png)
+<img src="/assets/posts/xcode-tests-local.png" alt="Output of xcodebuild tool in terminal" loading="lazy" />
 
 Good job! Let's move to the next step.
 
@@ -119,7 +119,7 @@ jobs:
 
 I added a parameter called `name` to the job to make it appear better. Results:
 
-![GitHub Actions web interface showing two finished jobs](/assets/posts/xcode-github-actions.png)
+<img src="/assets/posts/xcode-github-actions.png" alt="GitHub Actions web interface showing two finished jobs" loading="lazy" />
 
 You can also use matrix feature to test different device configurations, etc.
 
@@ -141,7 +141,7 @@ You will need to disable them in your [project's schema](https://stackoverflow.c
 Go to Xcode, then *Product > Scheme > Edit Scheme*, uncheck "Enabled" field near the
 "MyProjectNameUITests".
 
-![Xcode scheme edit window with disabled UI tests](/assets/posts/xcode-disable-ui-tests.png)
+<img src="/assets/posts/xcode-disable-ui-tests.png" alt="Xcode scheme edit window with disabled UI tests" loading="lazy" />
 
 ## Conclusion
 

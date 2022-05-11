@@ -23,11 +23,11 @@ Draft issues belong to your GitHub Project
 instead of a repository like regular issues.
 You can add title and description in a similar way as with regular issues.
 
-![Example of a draft issue in GitHub Projects](/assets/posts/github-draft-issue-example.png)
+<img src="/assets/posts/github-draft-issue-example.png" alt="Example of a draft issue in GitHub Projects" loading="lazy" />
 
 In addition, you can assign fields values to created draft issues (except *"Labels"* and *"Milestones"* fields as they require a regular issue).
 
-![Example of a draft issues in a view in GitHub Projects](/assets/posts/github-projects-draft-issues-view.png)
+<img src="/assets/posts/github-projects-draft-issues-view.png" alt="Example of a draft issues in a view in GitHub Projects" loading="lazy" />
 
 Draft issues can be useful for your project management activities.
 For example, during **the planning**. 
@@ -55,11 +55,11 @@ within a project and assign them to your issues.
 You can see a field named "Sprint" that has the "Iteration" type below.
 Time ranges can be different, customized separately.
 
-![Screenshot of possible Iteration field type values](/assets/posts/github-projects-iteration-field.png)
+<img src="/assets/posts/github-projects-iteration-field.png" alt="Screenshot of possible Iteration field type values" loading="lazy" />
 
 Now, in the project, you can assign created time ranges to a specific issue.
 
-![Assigning Iteration type field to the issues](/assets/posts/github-projects-iteration-field-usage.png)
+<img src="/assets/posts/github-projects-iteration-field-usage.png" alt="Assigning Iteration type field to the issues" loading="lazy" />
 
 This field type is useful if you are following agile practices.
 You are able to track issues over time and plan work ahead.
@@ -79,11 +79,10 @@ No need to leave the board to see what PRs are linked.
 The field is created automatically for each project. 
 You only need to include it in your view. 
 
-*Docs:* 
+<img src="/assets/posts/github-projects-linked-pr-field.png" alt="Screenshot to show how Linked Pull Requests field looks" loading="lazy" />
 
+*Docs:*
 - [How to include/hide fields in the view?](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/customizing-your-project-views#showing-and-hiding-fields)
-
-![Screenshot to show how Linked Pull Requests field looks](/assets/posts/github-projects-linked-pr-field.png)
 
 ## 4. Use icons for your field values
 
@@ -92,10 +91,10 @@ The best way to illustrate the tip is by visual comparison.
 Check two screenshots below. What do you think?
 
 *Without icons*
-![Not using icons for field values iin GitHub Projects](/assets/posts/github-projects-noicons.png)
+<img src="/assets/posts/github-projects-noicons.png" alt="Not using icons for field values iin GitHub Projects" loading="lazy" />
 
 *With icons*
-![Using icons for field values iin GitHub Projects](/assets/posts/github-projects-with-icons.png)
+<img src="/assets/posts/github-projects-with-icons.png" alt="Using icons for field values iin GitHub Projects" loading="lazy" />
 
 Aren't values with icons look better? But, how to add them to your field values? 
 Follow the steps:
@@ -107,7 +106,7 @@ e.g `Low :star:`.
 
 Below you can find animated step-by-step guide on how to add icons to field values.
 
-![GIF with step-by-step guide how to add icons to field values](/assets/posts/github-projects-icons-guide.gif)
+<img src="/assets/posts/github-projects-icons-guide.gif" alt="GIF with step-by-step guide how to add icons to field values" loading="lazy" />
 
 Not sure what emojis exist? 
 Check [the list of emojis](https://gist.github.com/rxaviers/7360908) supported by GitHub.

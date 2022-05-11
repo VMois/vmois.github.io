@@ -117,7 +117,7 @@ I have finished the MVP version of the project :tada: The project name is "Flare
 
 It is deployed for this blog. Below you can find the screenshot of the time-on-page metric for each page on this website. The values are in seconds.
 
-![Screenshot pf Flarelytics MVP time-on-page statistics for vmois.dev website](/assets/posts/flarelytics_mvp_stats.png)
+<img src="/assets/posts/flarelytics_mvp_stats.png" alt="Screenshot of Flarelytics MVP time-on-page statistics for vmois.dev website" loading="lazy" />
 
 This is a simple metric, but it provides me with some confidence that my content is valuable to the readers.
 
