@@ -13,10 +13,6 @@ I am interested in Python, backend development, distributed systems, and archite
 
 I created this blog, *"A place for my tech stuff"*, to learn how to write better technical content, advance my knowledge, and share it along the way.
 
-If you want to know more about what I am doing:
-
-<script async data-uid="48f5d9122c" src="https://astounding-motivator-9549.ck.page/48f5d9122c/index.js"></script>
-
 ## Not tech related
 
 I am an introvert with short bursts of extroverted behavior :sweat_smile:. 
