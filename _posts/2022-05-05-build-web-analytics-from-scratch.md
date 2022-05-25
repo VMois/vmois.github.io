@@ -1,29 +1,30 @@
 ---
 layout: post
-title: Building web analytics project from scratch
+title: Build your own web analytics from scratch
 tags: [web-analytics,cloudflare,javascript]
 comments: false
 readtime: true
 slug: build-web-analytics-project-from-scratch
+last_modified_at: May 25, 2022
 ---
 
-In this article, I want to write about why and how I built my custom web analytics project. I will explain my motivation and walk you through the technical details of the project.
+In this article, I want to write about why and how I built my web analytics from scratch. I will explain my motivation and walk you through the technical details of the project.
 
 ## Why to roll your own analytics?
 
 I want to write articles that are useful and insightful. To do that, I need to understand how my content is performing and where it needs to improve. After some consideration, I decided to focus on how much time visitors spend on a page (so-called “time-on-page”). This metric can provide me with valuable feedback. If most of my visitors spend only 10 seconds on an article, maybe, it was not that useful.
 
-I am using [Plausible](https://plausible.io) as a web analytic tool for this blog. It provides a way to measure how much time visitors spend on a page. But, it has an issue. When a user visits only a single webpage, the "time-on-page" metric is not calculated ([details](https://github.com/plausible/analytics/discussions/863)). Unfortunately, this is the situation with my blog. Most of the visitors visit only one article. Meaning I lose the majority of the valuable insights. Because of that, I decided to build my web analytics tool.
+I am using [Plausible](https://plausible.io) as a web analytics tool for this blog. It provides a way to measure how much time visitors spend on a page. But, it has an issue. When a user visits only a single webpage, the "time-on-page" metric is not calculated ([details](https://github.com/plausible/analytics/discussions/863)). Unfortunately, this is the situation with my blog. Most of the visitors visit only one article. Meaning I lose the majority of the valuable insights. Because of that, I decided to build my web analytics project.
 
 ## Building the project
 
-Before I started building, I decided to create a list of requirements for the MVP version of my project:
+Before I started building, I decided to create a list of requirements for the MVP version:
 
 - **hosted on a serverless platform**; it makes maintenance and scaling easier
 
 - **hosted for free**, I am on a tight budget here :satisfied:
 
-- **does not store private data of visitors**; no cookies
+- **does not store private data of visitors**; no cookies or IP addresses
 
 - **focuses on the "time-on-page" metric only**; other features are less important
 
@@ -31,11 +32,11 @@ Before I started building, I decided to create a list of requirements for the MV
 
 As you can see, I am not building a replacement for Plausible. My only goal was to be able to accurately track the “time-on-page” metric. In the future, if needed, I can add more features or even substitute Plausible completely.
 
-Let's dive into the technical details of the project.
+Let's dive into the technical details.
 
 ### Web browser tracker
 
-The main idea of how a tracker should work came from [an article from the Ctrl blog](https://www.ctrl.blog/entry/ctrl-analytics.html). They described their experience in creating web analytics from scratch.
+The main idea of how a tracker should work came from [an article from the Ctrl blog](https://www.ctrl.blog/entry/ctrl-analytics.html). They described their experience in building web analytics from scratch.
 
 The tracker is a short script written in plain JavaScript. It detects when a visitor opens or closes a page and notifies the backend. When the page opens, the script will generate a random UUID in the browser called `tracking_id`. 
 
@@ -80,7 +81,7 @@ It is enough to calculate a time difference between each visible/hidden pair and
 
 ### Backend
 
-It was easy to decide on which serverless platform to host my project. For a long time, I heard a lot of good things about [Cloudflare Workers](https://workers.cloudflare.com). This was a perfect opportunity to try it out. Workers have a lot of benefits like easy deployment, scalable, and a good free tier plan.
+It was easy to decide on which serverless platform to host my web analytics project. For a long time, I heard a lot of good things about [Cloudflare Workers](https://workers.cloudflare.com). This was a perfect opportunity to try it out. Workers have a lot of benefits like easy deployment, scalable, and a good free tier plan.
 
 Besides, Workers have a few handy features that might be useful for the future. For example, each HTTP request [contains information about the request's origin](https://developers.cloudflare.com/workers/runtime-apis/request#incomingrequestcfproperties) and [bot score](https://developers.cloudflare.com/bots/reference/bot-management-variables/).
 
@@ -88,7 +89,7 @@ My programming language of choice for Workers was [TypeScript](https://www.types
 
 ### Storage
 
-My website traffic is low, but I still want to design a platform that can potentially scale in the future. It means choosing appropriate storage.
+My website traffic is low, but I still want to build a web analytics that can potentially scale in the future. It means choosing appropriate storage.
 
 I assume that there will be many more "write" requests (new visitors coming) than "read" requests. So I need write-optimized storage.
 
@@ -113,7 +114,7 @@ I didn’t put many thoughts into the schema design as the scale I am working wi
 
 ## Final results
 
-I have finished the MVP version of the project :tada: The project name is "Flarelytics" and it is [open-source on GitHub](https://github.com/VMois/flarelytics), so feel free to check.
+I have built the MVP version of my web analytics project :tada: It is called "Flarelytics". The project is [open-source on GitHub](https://github.com/VMois/flarelytics), so feel free to check.
 
 It is deployed for this blog. Below you can find the screenshot of the time-on-page metric for each page on this website. The values are in seconds.
 
