@@ -133,7 +133,7 @@ The comment number two definitely looks more informative and supportive.
 
 ## Conclusion
 
-If I want to summarize this whole article, I would say that good writing is vital during code review, and it is better to overcommunicate than to under-communicate. Good writing skills become even more critical when you have a remote job where people are not present simultaneously; hence it is harder to clarify things on the spot.
+To summarize this article, I would say that good writing is vital during code review, and learning to communicate coherently is essential. Good writing skills become even more critical when you have a remote job where people are not present simultaneously; hence it is harder to clarify things on the spot.
 
 Hopefully, this article gave some valuable tips about better code reviews.
 
