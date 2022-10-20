@@ -5,6 +5,7 @@ tags: []
 comments: false
 readtime: true
 slug: code-review-tips
+canonical: https://medium.com/@gdscbudapest/code-review-tips-ac3dea32312b
 ---
 
 Code reviews are standard practice in most software companies. It helps to improve code correctness and quality and catch bugs early on. Because you will spend a lot of your software development time on code reviews, being good at it is essential. The code review involves two parties: *the reviewer* and *the contributor*. The most common code review process looks like this:
