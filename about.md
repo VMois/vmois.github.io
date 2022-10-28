@@ -4,10 +4,7 @@ title: About
 subtitle: Hi! I'm Vladyslav Moisieienkov.
 ---
 
-I am a software engineer from Ukraine. I work as a technical student at [CERN](https://home.cern) 
-on the [REANA](https://reanahub.io) platform for reproducible research analysis. 
-
-Before, I spend almost three years working part-time as Data Engineering Intern at [Realeyes](https://www.realeyesit.com) while studying full-time Electrical Engineering BSc at [BME](https://www.vik.bme.hu/en/) university (and my studies are still ongoing).
+I am a software engineer from Ukraine. I work part-time as a Data Engineer at [WorldQuant Predictive](https://wqpredictive.com) and studying full-time Electrical Engineering BSc at [Budapest University of Technology and Economics](https://www.vik.bme.hu/en/) university.
 
 I am interested in Python, backend development, distributed systems, and architecture design. It brings me joy to see how components of the system interact with each other efficiently.
 
