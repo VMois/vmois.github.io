@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Code Review Tips
-tags: []
+tags: [gdsc]
 comments: false
 readtime: true
 slug: code-review-tips
