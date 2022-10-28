@@ -25,7 +25,7 @@ The process is usually asynchronous, meaning the contributor and reviewer are no
 What makes a good code review? I want to share tips for improving your code review process in this article. The code review tips will be mostly about efficient communication between contributor and reviewer. Let's get started.
 
 {: .box-note}
-The article was created for Google Developer Student Club at the Budapest University of Technology and Economics. Please [read the original version](https://medium.com/@gdscbudapest/code-review-tips-ac3dea32312b) and check [their blog](https://medium.com/@gdscbudapest) for more informative articles!
+The article was created for Google Developer Student Club at the Budapest University of Technology and Economics. Please [read the original version](https://medium.com/@gdscbme/code-review-tips-ac3dea32312b) and check [their blog](https://medium.com/@gdscbme) for more informative articles!
 
 ## Tips for both contributors and reviewers
 
