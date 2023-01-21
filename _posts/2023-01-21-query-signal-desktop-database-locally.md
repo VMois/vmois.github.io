@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Query Signal Desktop messages locally via SQLite using JavaScript
+title: Query Signal Desktop messages locally from SQLite using JavaScript
 tags: [javascript,signal]
 comments: false
 readtime: true
