@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About
-subtitle: Hi! I'm Vladyslav Moisieienkov.
+subtitle: "Hi! I'm Vladyslav Moisieienkov :ukraine:"
 ---
 
-I am a software engineer from Ukraine. I work part-time as a Data Engineer at [WorldQuant Predictive](https://wqpredictive.com) and studying full-time Electrical Engineering BSc at [Budapest University of Technology and Economics](https://www.vik.bme.hu/en/) university. Previously, Software Engineer (Technical Student) at [CERN](https://www.home.cern/), Data Engineering Intern at [Realeyes](https://www.realeyesit.com/).
+Welcome to the *"A place for my tech stuff"* blog. I created this blog to learn how to write better technical content, advance my knowledge, and share it along the way.
 
-I am interested in Python, backend development, distributed systems, and architecture design. It brings me joy to see how components of the system interact with each other efficiently.
+I am writing about different topics in software engineering that I find interesting :nerd_face: I hope you will find something useful here. Do you want to know what topics are already covered? Check out [the tags page](/tags/).
 
-I created this blog, *"A place for my tech stuff"*, to learn how to write better technical content, advance my knowledge, and share it along the way.
-
-## Not tech related
-
-I am an introvert with short bursts of extroverted behavior :sweat_smile:. 
-I love playing volleyball and watching movies, TV series, and anime.
+Interested? Subscribe to my [RSS feed](/feed.xml) or [Twitter](https://twitter.com/vmoisu) to get notified about new posts.
