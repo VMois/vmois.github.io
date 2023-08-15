@@ -19,15 +19,29 @@ I learned about the existence of Chisel HDL a while ago when I was learning abou
 {: .box-note}
 There are debates about Chisel vs. Verilog/VHDL and whatever Chisel is useful for hardware designers. I am not going to discuss those things here. The goal is to learn something new and have fun. But, if you plan to become a hardware designer, I suggest focusing on Verilog or VHDL first. It is the de-facto standard in most companies so that you can get a job more easily.
 
-## Chisel Book
+## Resources
 
-I wanted to brush up my knowledge of digital design, so I have decided to use [Chisel Book](https://github.com/schoeberl/chisel-book) by Martin Schoeberl. I recommend it a lot. In addition to the book, check [Chisel examples](https://github.com/schoeberl/chisel-examples) repository. It contains many examples from the book in a more complete form.
+The list of resources I have found useful and recommend to check.
+
+### Chisel Book
+
+I wanted to brush up my knowledge of digital design. I have decided to use [Chisel Book](https://github.com/schoeberl/chisel-book) by Martin Schoeberl. I recommend it a lot for both learning about Chisel3 and digital design. In addition to the book, check [Chisel examples](https://github.com/schoeberl/chisel-examples) repository. It contains many examples from the book in a more complete form.
+
+I have started learning Chisel with a specific project in mind, so after checking a few introduction chapters, I jumped into chapters that were useful to me. If you are generally learning, going through the book from the beginning would probably make more sense.
 
 You can also find some slides from [Digital Electronics 2](https://www2.imm.dtu.dk/courses/02139/) course talking about Chisel.
 
+### Chisel template repository
+
+I like to learn by doing, so I started by running some Chisel examples on my laptop and outputting some Verilog code. I highly suggest checking [chisel-template](https://github.com/freechipsproject/chisel-template) project. It provides all the necessary setup code, and you must install Scala tools.
+
+## Tips
+
+Below you can find some tips that I found useful.
+
 ## Using Docker to develop in Chisel
 
-I like to learn by doing, so I started by running some Chisel examples on my laptop and outputting some Verilog code. I highly suggest checking [chisel-template](https://github.com/freechipsproject/chisel-template) project. It provides all the necessary setup code, and you must install Scala tools. A small tip I want to share is that I like to use Docker containers to have an isolated environment instead of installing tools directly on my laptop. For Chisel, I have created a simple Dockerfile that you can use:
+A small tip I want to share is that I like to use Docker containers to have an isolated environment instead of installing tools directly on my laptop. For Chisel, I have created a simple Dockerfile that you can use with the `chisel-template` mentioned above:
 
 ```dockerfile
 FROM openjdk:11
