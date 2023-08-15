@@ -39,7 +39,7 @@ I like to learn by doing, so I started by running some Chisel examples on my lap
 
 Below you can find some tips that I found useful.
 
-## Using Docker to develop in Chisel
+### Using Docker to develop in Chisel
 
 A small tip I want to share is that I like to use Docker containers to have an isolated environment instead of installing tools directly on my laptop. For Chisel, I have created a simple Dockerfile that you can use with the `chisel-template` mentioned above:
 
