@@ -12,6 +12,9 @@ In this short article, I want to show you how to query the Signal Desktop messag
 {: .box-note}
 Are you a user of the Signal Desktop app? I created a [Signal Your Love desktop app](https://signalyourlove.app) that displays statistics of your Signal Desktop chats. The app is ideal for long-distance couples, friends, and anyone who wants to cherish their chat history with essential people. Check it out!
 
+{: .box-note}
+Update 15th of August 2023: Signal Your Love desktop app is open-sourced now. Check the [GitHub repository](https://github.com/VMois/signalyourlove-app).
+
 The Signal Desktop app stores all messages locally in an *encrypted* SQLite database. The key to decrypting the database is stored locally as part of the app's configuration files. The location of the database and a key depends on your operation system:
 
 - For Linux, `<home>/.config/Signal`;
