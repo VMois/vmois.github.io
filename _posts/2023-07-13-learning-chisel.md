@@ -5,6 +5,7 @@ tags: [hardware,chisel,docker]
 comments: false
 readtime: true
 slug: learning-chisel
+last_modified_at: September 1, 2023
 ---
 
 In this short article, I want to share some materials and tips about learning [Chisel](https://www.chisel-lang.org/), a hardware description language (HDL) embedded in Scala. It will be handy for software engineers interested in hardware design. Expect this article to be updated as I progress with my learning journey.
@@ -34,6 +35,15 @@ You can also find some slides from [Digital Electronics 2](https://www2.imm.dtu.
 ### Chisel template repository
 
 I like to learn by doing, so I started by running some Chisel examples on my laptop and outputting some Verilog code. I highly suggest checking [chisel-template](https://github.com/freechipsproject/chisel-template) project. It provides all the necessary setup code, and you must install Scala tools.
+
+### Interesting Chisel projects
+
+In this section, you will find a list of interesting projects that you might take an inspiration from.
+
+- [FPGA code samples for different interfaces written in Chisel2](https://github.com/maltanar/fpga-tidbits)
+- [FPGA shells with wrappers for different interfaces written in Chisel](https://github.com/sifive/fpga-shells)
+- [Collection of different useful small Chisel3 projects](https://github.com/j-marjanovic/chisel-stuff)
+- [Project that shows how Chisel and Rust can have a custom peripherals](https://github.com/ekiwi/pynq)
 
 ## Tips
 
