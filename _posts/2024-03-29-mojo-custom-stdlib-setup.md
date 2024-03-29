@@ -32,7 +32,10 @@ Modular CLI stores all data in the `~/.modular` folder. If we walk it for a bit,
 -rw-r--r--  1 vmois  staff  48541986 Mar 28 00:18 tensor.mojopkg
 ```
 
-The `stdlib.mojopkg` file is the standard library package. If we replace it with the one we just built and try to run Mojo programs as usual, our updated code will be used. 
+The `stdlib.mojopkg` file is the standard library package. If we replace it with the one we just built and try to run Mojo programs as usual, our updated code will be used.
+
+{: .box-warning}
+Make a copy of the original stdlib package before replacing it.
 
 ```bash
 $ cp <path-to-mojo-repo>/build/stdlib.mojopkg <path-to-modular-folder>/.modular/pkg/packages.modular.com_mojo/lib/mojo/stdlib.mojopkg
