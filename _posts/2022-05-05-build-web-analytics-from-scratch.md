@@ -127,3 +127,5 @@ I do not plan to develop new features anytime soon. Maybe, some smaller improvem
 Thank you for reading the article!
 
 *And, thank you, [Krystyna Svirbyy](https://www.linkedin.com/in/krystyna-svirbyy/), for reviewing the article.*
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="vmois" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Like the content? Support me by buying a cup of tea" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>

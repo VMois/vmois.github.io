@@ -46,3 +46,5 @@ You can adjust the process so there is no need to copy the library constantly. F
 
 Enjoy.
 
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="vmois" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Like the content? Support me by buying a cup of tea" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+
