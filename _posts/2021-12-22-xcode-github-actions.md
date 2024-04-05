@@ -151,4 +151,6 @@ For example, adding a [linter check](https://github.com/realm/SwiftLint) for Swi
 or writing some UI tests. 
 Thank you for reading this article! See you.
 
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="vmois" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Like the content? Support me by buying a cup of tea" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+<div class="plausible-event-name=Buymeacoffee+Click">
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="vmois" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Like the content? Support me by buying a cup of tea" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
+</div>
