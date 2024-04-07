@@ -30,3 +30,5 @@ To constrain costs and keep it simple (KISS), I will host the project on a singl
 <img src="/assets/posts/miwaitway/miwaitway_initial_system_design.png" alt="Simple diagram of potential system design for the MiWaitWay project" loading="lazy" />
 
 As a disclaimer, I have already started the project, but it is in the early stages. I will write about what has been done so far in the following articles. After that, I will continue developing and sharing insights about the project. Feel free to check the [MiWaitWay Github repository](https://github.com/VMois/miwaitway).
+
+The idea to share the progress of the project was inspired by [Building an Uber clone](https://jurajmajerik.com/blog/start-here/) series by Juraj Majerik and subsequent coverage of Juraj's work in [The Pragmatic Engineer](https://blog.pragmaticengineer.com/an-educational-side-project/).
