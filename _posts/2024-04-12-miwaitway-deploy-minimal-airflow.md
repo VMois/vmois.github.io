@@ -7,7 +7,7 @@ readtime: true
 slug: deploy-airflow-google-cloud-miwaitway
 ---
 
-In this part of the MiWaitWay series, I focus on configuring Apache Airflow to consume as few resources as possible and deploy to a small VM on Google Cloud. In addition, I need to leave some resources for a web app that will host a dashboard/map showing the average wait time for each bus stop.
+In this part of the MiWaitWay series, I focus on configuring Apache Airflow to consume as few resources as possible and deploy it to a small VM on Google Cloud. In addition, I need to leave some resources for a web app that will host a dashboard/map showing the average wait time for each bus stop.
 
 To learn more about the MiWaitWay project and its high-level architecture, check [the introduction article](/miwaitway-average-wait-time-on-stop/).
 
@@ -65,6 +65,11 @@ The example of a simple bash script I use:
 ```bash
 #!/bin/bash
 
+if [ ! -f .env ]; then
+    echo ".env is not found! Aborting!"
+    exit 1
+fi
+
 git pull origin main
 docker compose build
 docker compose down && docker compose up -d
@@ -76,6 +81,7 @@ The issue arises when rebuilding a container(s) is necessary. In this case, Airf
 
 Related commits:
 - [Add simple deploy bash script](https://github.com/VMois/miwaitway/commit/5d9d8fb1dc3b10cbdf1f00ef191ade22335bd7cd)
+- [Make deploy script check for .env file](https://github.com/VMois/miwaitway/commit/432ea17dfb1c8a1e6550f506cbc112cf6c686233)
 
 ## Accessing Airflow UI
 
@@ -89,6 +95,7 @@ gcloud compute ssh airflow-and-web \
     --zone us-central1-c \
     -- -NL 8080:localhost:8080  # options that are passed to ssh command
 ```
+
 SSH options (can be found in `man ssh`):
 
 - `N`, do not execute a remote command. This option is only helpful for forwarding ports;
