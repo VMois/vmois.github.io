@@ -17,7 +17,7 @@ This is an oddly specific metric. But, the usability of public transport largely
 
 You cannot improve what you cannot measure, which is what this project is about. Luckily, many public transit agencies provide a real-time feed of their vehicles that can be used by services such as Google Maps and the [Transit app](https://transitapp.com/). Using the real-time vehicle location data, we can calculate how frequently vehicles visit each stop. Then, we can display the statistics to curious users via a web page. Below is a mockup of the UI.
 
-<img src="/assets/posts/miwaitway/miwaitway_initial_ui_design.png" alt="Mockup of UI for the project" loading="lazy" />
+<img src="/assets/posts/miwaitway/miwaitway_initial_ui_design.webp" alt="Mockup of UI for the project" loading="lazy" />
 
 For the data source, I chose the [GTFS-rt](https://developers.google.com/transit/gtfs-realtime) (GTFS real-time) feed from [Mississauga Transit Agency](https://www.mississauga.ca/miway-transit/) (MiWay). I use their services frequently and am personally interested in metrics. As a tribute to the data source, I named the project **MiWaitWay**.
 
@@ -27,7 +27,7 @@ I plan this project to be educational - learning new tools and solving new probl
 
 To constrain costs and keep it simple (KISS), I will host the project on a single VM on Google Cloud. The high-level system design is below.
 
-<img src="/assets/posts/miwaitway/miwaitway_initial_system_design.png" alt="Simple diagram of potential system design for the MiWaitWay project" loading="lazy" />
+<img src="/assets/posts/miwaitway/miwaitway_initial_system_design.webp" alt="Simple diagram of potential system design for the MiWaitWay project" loading="lazy" />
 
 As a disclaimer, I have already started the project, but it is in the early stages. I will write about what has been done so far in the following articles. After that, I will continue developing and sharing insights about the project. Feel free to check the [MiWaitWay Github repository](https://github.com/VMois/miwaitway).
 
