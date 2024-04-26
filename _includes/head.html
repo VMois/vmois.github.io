@@ -47,6 +47,18 @@
   {% include cloudflare_analytics.html %}
 
   <script defer data-domain="vmois.dev" src="https://plausible.io/js/script.tagged-events.js"></script>
+  <script
+    src="https://js-de.sentry-cdn.com/fc657f2a8af7f307e6937d804fa0df47.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    Sentry.onLoad(function() {
+        Sentry.init({
+            // Performance Monitoring
+            tracesSampleRate: 1.0, // Capture 100% of the transactions
+        });
+    });
+  </script>
 
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
