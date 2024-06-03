@@ -1,34 +1,69 @@
 ---
 layout: post
-title: Measuring average wait time at a stop using GTFS real-time data
-tags: [data-engineering, miwaitway]
+title: Measuring average wait time for a bus using GTFS real-time data
+tags: [data-engineering, miwaitway,public-transport]
 comments: false
 readtime: true
 slug: miwaitway-average-wait-time-on-stop
 ---
 
-I like public transport, and I enjoy software engineering. For a long time, I wanted to build a project that worked with data end-to-end. From data ingestion throughout the analysis to the presentation to the external end user. The only thing that stopped me was not finding an analysis topic I would want to dive into (low-effort excuse, I know, but it is what it is). As I am growing an interest in public transportation and am a day-to-day user of it, I have recently found a topic I would like to explore - an average wait time at a stop.
+For a long time, I wanted to build a project that worked with end-to-end data, from data ingestion and analysis to the final web app that can be shared with users.
+I like public transport and, recently, have found a topic worth exploring - the average wait time for a bus at stops.
+Follow me on a journey of building the project to analyze wait times and documenting it as a series of articles.
 
-## Why is average wait time important?
+## Why does the average wait time at a stop metric matter?
 
-This is an oddly specific metric. But, the usability of public transport largely depends on its frequency. Ideally, in a densely populated area, you would want to see a bus/tram at a stop for the same route every 5-10 minutes. At such frequencies, there is no need to check an app; you walk to a stop, and there is a good chance your ride will be within minutes. There are other nonobvious consequences, such as safety. If you do not feel comfortable in a current vehicle, taking off at the next stop and waiting 5-10 minutes for the subsequent transport is not a big deal. Overall, reliable frequency is essential. Even if it is a less populated area, having a 15-minute wait time in 90+% of cases is already very impressive and will boost ridership.
+The usability of public transport for everyday commutes largely depends on its frequency (there is also coverage, but let's omit it for now).
+Less frequent and reliable service is less likely to be used.
+It is easier to justify using a car when the bus comes only once or twice an hour.
+
+The more frequent the service, the more resources must be dedicated; hence, the transit agency needs a bigger budget.
+But if we aim for the ideal service, you should see a bus or tram every 5-10 minutes in densely populated areas and in medium-density areas every 10-15 minutes.
+
+At such frequencies, there is no need to check an app; you walk to a stop, and there is a good chance your ride will be within minutes.
+
+There are other nonobvious consequences, such as safety.
+If you feel uncomfortable in your current bus, taking off at the next stop and waiting 5-10 minutes for the next one does not significantly disrupt the journey. 
+
+In my opinion, the average wait time at a stop is a more critical metric than on-time schedule performance.
+And to improve wait time, it needs to be measured.
 
 ## About the project
 
-You cannot improve what you cannot measure, which is what this project is about. Luckily, many public transit agencies provide a real-time feed of their vehicles that can be used by services such as Google Maps and the [Transit app](https://transitapp.com/). Using the real-time vehicle location data, we can calculate how frequently vehicles visit each stop. Then, we can display the statistics to curious users via a web page. Below is a mockup of the UI.
+Many public transit agencies provide a real-time feed of their vehicles that can be used by services such as Google Maps and the [Transit app](https://transitapp.com/).
+I want to measure the average wait time at a stop by calculating how frequently vehicles visit each stop using real-time vehicle location data.
+Then, the results will be displayed on the website with an interactive map for users to explore. 
+Below is a mockup of the UI.
 
 <img src="/assets/posts/miwaitway/miwaitway_initial_ui_design.webp" alt="Mockup of UI for the project" loading="lazy" />
 
-For the data source, I chose the [GTFS-rt](https://developers.google.com/transit/gtfs-realtime) (GTFS real-time) feed from [Mississauga Transit Agency](https://www.mississauga.ca/miway-transit/) (MiWay). I use their services frequently and am personally interested in metrics. As a tribute to the data source, I named the project **MiWaitWay**.
+For the data source, I chose the [GTFS-rt](https://developers.google.com/transit/gtfs-realtime) (GTFS real-time) feed from [Mississauga Transit Agency](https://www.mississauga.ca/miway-transit/) (MiWay).
+I use their services frequently and am interested in wait times for different stops across a city. 
+The project is named **MiWaitWay**, a tribute to the data source.
 
-I plan this project to be educational - learning new tools and solving new problems. The secondary goal is to help me understand a bit more about how public transport is run. Because I want to learn specific tools, part of the tech stack is already decided. As I want to learn more about Google BigQuery, I will build on Google Cloud. Using other Google services, such as cloud storage or compute engine (VMs), naturally makes sense. Apache Airflow - a widely known orchestration tool - will also be used. Other tech choices can be made later.
+This project will be primarily educational, and as mentioned before, I will document a journey in a series of articles.
+
 
 ## High-level system design
 
-To constrain costs and keep it simple (KISS), I will host the project on a single VM on Google Cloud. The high-level system design is below.
+To constrain costs and keep it simple, I will host the project on a single small VM on Google Cloud.
+Because I want to learn specific tools, part of the tech stack is already decided:
+- Google BigQuery as a data warehouse;
+- Apache Airflow, a popular data workflow orchestration tool.
+
+The tech stack for the web app will be selected later in the series.
+
+The early high-level system design diagram is below.
 
 <img src="/assets/posts/miwaitway/miwaitway_initial_system_design.webp" alt="Simple diagram of potential system design for the MiWaitWay project" loading="lazy" />
 
-As a disclaimer, I have already started the project, but it is in the early stages. I will write about what has been done so far in the following articles. After that, I will continue developing and sharing insights about the project. Feel free to check the [MiWaitWay Github repository](https://github.com/VMois/miwaitway).
+A disclaimer: I have already started the project, It is in its early stages.
+Feel free to check the [MiWaitWay Github repository](https://github.com/VMois/miwaitway).
 
-The idea to share the progress of the project was inspired by [Building an Uber clone](https://jurajmajerik.com/blog/start-here/) series by Juraj Majerik and subsequent coverage of Juraj's work in [The Pragmatic Engineer](https://blog.pragmaticengineer.com/an-educational-side-project/).
+## Conclusion
+
+The idea to share the project's progress was inspired by Juraj Majerik's [Building an Uber clone](https://jurajmajerik.com/blog/start-here/) series and subsequent coverage of Juraj's work in [The Pragmatic Engineer](https://blog.pragmaticengineer.com/an-educational-side-project/).
+If you are interested, join me on this journey and learn something interesting.
+Thank you for reading. Have a great day!
+
+Check the first article of this series - ["Deploying Apache Airflow on a resource-constrained VM on Google Cloud"](/deploy-airflow-google-cloud-miwaitway/).
